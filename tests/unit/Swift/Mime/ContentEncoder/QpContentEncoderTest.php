@@ -479,11 +479,6 @@ class Swift_Mime_ContentEncoder_QpContentEncoderTest extends \SwiftMailerTestCas
         return $this->getMockery('Swift_CharacterStream')->shouldIgnoreMissing();
     }
 
-    private function createEncoder($charStream)
-    {
-        return new Swift_Mime_HeaderEncoder_QpHeaderEncoder($charStream);
-    }
-
     private function createOutputByteStream($stub = false)
     {
         return $this->getMockery('Swift_OutputByteStream')->shouldIgnoreMissing();

@@ -127,9 +127,4 @@ class Swift_Events_SimpleEventDispatcherTest extends \PHPUnit_Framework_TestCase
 
         $this->assertTrue($evt->bubbleCancelled());
     }
-
-    private function createDispatcher(array $map)
-    {
-        return new Swift_Events_SimpleEventDispatcher($map);
-    }
 }
